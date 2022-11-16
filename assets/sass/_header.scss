@@ -1,3 +1,94 @@
-nav {
-  @include color("red");
+header {
+  width: 100%;
+  padding: 28px 0;
+  @include position(absolute, $zIndex:1, $top:0, $left:0);
+
+  .wrapper {
+    @include flex(flex, $justify:space-between);
+  }
+
+  .hamburger {
+    @include display(none);
+  }
+}
+
+.nav-div {
+  margin-bottom: 10px;
+  @include flex(flex, $align:center);
+}
+
+.nav-items {
+  margin-right: 11px;
+  @include flex(flex, $gap:20px);
+
+  li:last-child::before {
+    margin-right: 5px;
+    @include icon('\f07a', $color:"white", $size:11px);
+  }
+
+  a {
+    @include position(relative);
+    @include color("white");
+    @include font($size:14px, $weight:600, $text:uppercase);
+
+    &::before {
+      content: '';
+      @include content-size(0, 2px);
+      @include display(block);
+      @include position(absolute, $bottom:-10px);
+      @include background("white");
+      @include transition(all .3s ease);
+    }
+
+    @include minResponsive(tablet) {
+      &:hover::before {
+        @include content-size(100%, 2px);
+      }
+    }
+  }
+}
+
+.hire-btn {
+  a {
+    padding: 15px 10px;
+    @include background("dark-blue");
+    @include color("white");
+    @include font($size:15px, $weight:600, $text:uppercase);
+  }
+}
+
+.banner {
+  max-height: 700px;
+  height: 92.5vh;
+  @include position(relative);
+  @include background("blue");
+
+  .banner-content {
+    width: 100%;
+    @include position(absolute, $top:53.3%, $left:50%);
+    @include color("white");
+    @include font($textAlign:center);
+    @include transform(translate(-50%, -50%));
+  }
+
+  h2 {
+    @include font($size:41px, $weight:400, $text:capitalize);
+  }
+
+  p {
+    padding: 17px 0 40px;
+    @include font($size:22px, $weight:400);
+  }
+
+  a {
+    padding-bottom: 18px;
+    @include position(relative);
+    @include color("white");
+    @include font($size:16px, $weight:bold, $text:uppercase);
+
+    &::before {
+      @include icon('\f078', $position:absolute, $bottom:0, $left:50%, $size:10px);
+      @include transform(translate(-50%, -50%));
+    }
+  }
 }
