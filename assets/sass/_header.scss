@@ -1,3 +1,4 @@
+/* header start */
 header {
   width: 100%;
   padding: 28px 0;
@@ -57,6 +58,8 @@ header {
   }
 }
 
+/* header end */
+/* banner start */
 .banner {
   max-height: 700px;
   height: 92.5vh;
@@ -92,3 +95,22 @@ header {
     }
   }
 }
+
+/* banner end */
+/* gallery part start */
+.gallery {
+  .wrapper {
+    width: 100%;
+  }
+
+}
+
+.gallery-items {
+  @include flex(flex,$wrap:wrap);
+
+  li {
+    @include flex($short_flex:1 0 30%);
+  }
+}
+
+/* gallery part end */

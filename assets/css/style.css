@@ -199,6 +199,7 @@ li {
   margin: 0 auto;
 }
 
+/* header start */
 header {
   width: 100%;
   padding: 28px 0;
@@ -288,6 +289,8 @@ header .hamburger {
   text-transform: uppercase;
 }
 
+/* header end */
+/* banner start */
 .banner {
   max-height: 700px;
   height: 92.5vh;
@@ -334,5 +337,29 @@ header .hamburger {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/* banner end */
+/* gallery part start */
+.gallery .wrapper {
+  width: 100%;
+}
+
+.gallery-items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.gallery-items li {
+  flex: 1 0 30%;
+}
+
+/* gallery part end */
 
 /*# sourceMappingURL=style.css.map */

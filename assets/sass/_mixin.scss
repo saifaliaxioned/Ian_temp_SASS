@@ -18,7 +18,7 @@
 }
 
 // for social icons
-@mixin icon($content, $position:null, $zIndex:null, $top:null, $right:null, $bottom:null, $left:null ,$color:null, $size:null, $weight:null, $textIndent:null) {
+@mixin icon($content, $position:null, $zIndex:null, $top:null, $right:null, $bottom:null, $left:null, $color:null, $size:null, $weight:null, $textIndent:null) {
   content: $content;
   @include position($position, $zIndex, $top, $right, $bottom, $left);
   @include color($color);
@@ -34,7 +34,7 @@
 }
 
 // for flex
-@mixin flex($flex:null, $basis:null, $justify:null, $align:null, $gap:null, $direction:null, $wrap:null, $flexOrder:null) {
+@mixin flex($flex:null, $basis:null, $justify:null, $align:null, $gap:null, $direction:null, $wrap:null, $flexOrder:null, $short_flex:null) {
   @if $flex {
     display: -webkit-box;
     display: -moz-box;
@@ -97,6 +97,10 @@
     -ms-flex-order: $flexOrder;
     -webkit-order: $flexOrder;
     order: $flexOrder;
+  }
+
+  @if $short_flex {
+    flex: $short_flex;
   }
 }
 
