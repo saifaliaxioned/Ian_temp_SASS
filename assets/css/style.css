@@ -221,6 +221,16 @@ header .wrapper {
 header .hamburger {
   display: none;
 }
+@media only screen and (max-width: 1280px) {
+  header .wrapper {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  header h1 {
+    width: 50%;
+  }
+}
 
 .nav-div {
   margin-bottom: 10px;
@@ -279,6 +289,11 @@ header .hamburger {
     height: 2px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .nav-items a {
+    font-size: 12px;
+  }
+}
 
 .hire-btn a {
   padding: 15px 10px;
@@ -287,6 +302,11 @@ header .hamburger {
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1024px) {
+  .hire-btn a {
+    font-size: 12px;
+  }
 }
 
 /* header end */

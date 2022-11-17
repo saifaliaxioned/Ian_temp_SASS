@@ -11,6 +11,18 @@ header {
   .hamburger {
     @include display(none);
   }
+
+  @include maxResponsive("large-desktop") {
+    .wrapper {
+      width: 96%;
+    }
+  }
+
+  @include maxResponsive("desktop") {
+    h1 {
+      width: 50%;
+    }
+  }
 }
 
 .nav-div {
@@ -41,10 +53,14 @@ header {
       @include transition(all .3s ease);
     }
 
-    @include minResponsive(tablet) {
+    @include minResponsive("tablet") {
       &:hover::before {
         @include content-size(100%, 2px);
       }
+    }
+
+    @include maxResponsive("desktop") {
+      @include font($size:12px);
     }
   }
 }
@@ -55,6 +71,10 @@ header {
     @include background("dark-blue");
     @include color("white");
     @include font($size:15px, $weight:600, $text:uppercase);
+
+    @include maxResponsive("desktop") {
+      @include font($size:12px);
+    }
   }
 }
 
