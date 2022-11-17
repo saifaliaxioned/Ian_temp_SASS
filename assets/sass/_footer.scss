@@ -75,17 +75,7 @@ footer {
   }
 }
 
-.twitter::before {
-  @include onlyIcon('\f099');
-}
-
-.github::before {
-  @include onlyIcon('\f09b');
-}
-
-.linkedin::before {
-  @include onlyIcon('\f0e1');
-}
+@include onlyIcon($fontAwesome);
 
 .footer-nav {
   @include flex(flex, $direction:column);
