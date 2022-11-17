@@ -18,8 +18,9 @@
 }
 
 // for social icons
-@mixin icon($content, $position:null, $zIndex:null, $top:null, $right:null, $bottom:null, $left:null, $color:null, $size:null, $weight:null, $textIndent:null) {
+@mixin icon($content, $display:null, $position:null, $zIndex:null, $top:null, $right:null, $bottom:null, $left:null, $color:null, $size:null, $weight:null, $textIndent:null) {
   content: $content;
+  @include display($display);
   @include position($position, $zIndex, $top, $right, $bottom, $left);
   @include color($color);
   font-family: 'FontAwesome';

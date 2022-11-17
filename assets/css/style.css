@@ -361,5 +361,53 @@ header .hamburger {
 }
 
 /* gallery part end */
+/* articles section start */
+.articles {
+  padding: 135px 0 105px;
+}
+.articles .wrapper {
+  width: 44%;
+}
+
+.article-items li {
+  padding-bottom: 75px;
+}
+.article-items .quote-icon {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-indent: -9999px;
+}
+.article-items .quote-icon::before {
+  content: "\f10d";
+  font-family: "FontAwesome";
+  font-size: 30px;
+  float: left;
+  text-indent: 0;
+  color: #205D8A;
+}
+.article-items p {
+  padding: 20px 0 15px;
+  line-height: 1.7;
+}
+.article-items h3 {
+  font-size: 17px;
+  font-weight: bold;
+  text-align: right;
+  text-transform: capitalize;
+}
+.article-items .writer-name {
+  color: #256DA3;
+}
+.article-items .upper-text {
+  text-transform: uppercase;
+}
+
+/* articles section end */
 
 /*# sourceMappingURL=style.css.map */
