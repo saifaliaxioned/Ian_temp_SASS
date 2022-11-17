@@ -1,0 +1,31 @@
+/* about part start */
+.about {
+  @include background("blue");
+
+  .wrapper {
+    width: 100%;
+  }
+}
+
+.about-content {
+  padding: 18px 0 15px;
+  @include font($size:20px, $weight:bold, $text:uppercase, $textAlign:center);
+
+  a {
+    @include color("white");
+
+    &::before {
+      padding: 3px 4px 0;
+      @include icon('\f138', $size:16px,$float:right)
+    }
+
+    @include minResponsive(tablet) {
+      &:hover {
+        @include color('dark-blue');
+        @include transition(all .3s ease);
+      }
+    }
+  }
+}
+
+/* about part end */

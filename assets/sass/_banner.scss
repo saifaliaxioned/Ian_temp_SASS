@@ -14,7 +14,7 @@
   }
 
   h2 {
-    @include font($size:41px, $weight:400, $text:capitalize);
+    @include font($size:41px, $weight:400);
   }
 
   p {

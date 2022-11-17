@@ -311,7 +311,6 @@ header .hamburger {
 .banner h2 {
   font-size: 41px;
   font-weight: 400;
-  text-transform: capitalize;
 }
 .banner p {
   padding: 17px 0 40px;
@@ -363,7 +362,7 @@ header .hamburger {
 /* gallery part end */
 /* articles section start */
 .articles {
-  padding: 135px 0 100px;
+  padding: 135px 0 28px;
 }
 .articles .wrapper {
   width: 44%;
@@ -392,7 +391,7 @@ header .hamburger {
   color: #205D8A;
 }
 .article-items p {
-  padding: 20px 0 15px;
+  padding: 18px 0 15px;
   line-height: 1.7;
 }
 .article-items h3 {
@@ -409,5 +408,42 @@ header .hamburger {
 }
 
 /* articles section end */
+/* about part start */
+.about {
+  background: #3894CE;
+}
+.about .wrapper {
+  width: 100%;
+}
+
+.about-content {
+  padding: 18px 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about-content a {
+  color: #fff;
+}
+.about-content a::before {
+  padding: 3px 4px 0;
+  content: "\f138";
+  font-family: "FontAwesome";
+  font-size: 16px;
+  float: right;
+}
+@media only screen and (min-width: 995px) {
+  .about-content a:hover {
+    color: #205D8A;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+}
+
+/* about part end */
 
 /*# sourceMappingURL=style.css.map */
