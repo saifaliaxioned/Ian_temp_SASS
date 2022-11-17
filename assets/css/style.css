@@ -452,7 +452,7 @@ header .hamburger {
 }
 
 footer {
-  padding: 100px 90px 0;
+  padding: 100px 92px 0;
   background: #272727;
   color: #A8A8A8;
 }
@@ -479,7 +479,7 @@ footer .wrapper {
 .footer-list figure {
   width: 20%;
   margin-right: 13px;
-  border: 3px solid #000;
+  border: 5px solid #000;
   float: left;
 }
 
@@ -494,12 +494,12 @@ footer .wrapper {
 
 .experiance-para,
 .available-para {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .experiance-para {
-  padding-bottom: 20px;
-  font-size: 16px;
+  padding-bottom: 13px;
+  font-size: 15px;
 }
 
 .available-para {
@@ -508,7 +508,7 @@ footer .wrapper {
 }
 
 .social-platform {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;

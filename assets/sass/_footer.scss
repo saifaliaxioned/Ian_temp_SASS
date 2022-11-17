@@ -5,7 +5,7 @@
 }
 
 footer {
-  padding: 100px 90px 0;
+  padding: 100px 92px 0;
   @include background("light-black");
   @include color("light-grey");
 
@@ -25,7 +25,7 @@ footer {
   figure {
     width: 20%;
     margin-right: 13px;
-    border: 3px solid #000;
+    border: 5px solid #000;
     float: left;
   }
 }
@@ -40,12 +40,12 @@ footer {
 
 .experiance-para,
 .available-para {
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .experiance-para {
-  padding-bottom: 20px;
-  @include font($size:16px);
+  padding-bottom: 13px;
+  @include font($size:15px);
 }
 
 .available-para {
@@ -54,7 +54,7 @@ footer {
 }
 
 .social-platform {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   @include flex(flex);
   @include font($size:14px);
 }
